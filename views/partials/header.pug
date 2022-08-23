@@ -1,0 +1,159 @@
+mixin header(header)
+
+  header
+    // Header
+    .section.page-header
+      // RD Navbar
+      .rd-navbar-wrap
+        nav.rd-navbar.rd-navbar-classic(data-layout='rd-navbar-fixed', data-sm-layout='rd-navbar-fixed', data-md-layout='rd-navbar-fixed', data-md-device-layout='rd-navbar-fixed', data-lg-layout='rd-navbar-static', data-lg-device-layout='rd-navbar-fixed', data-xl-layout='rd-navbar-static', data-xl-device-layout='rd-navbar-static', data-xxl-layout='rd-navbar-static', data-xxl-device-layout='rd-navbar-static', data-lg-stick-up-offset='46px', data-xl-stick-up-offset='46px', data-xxl-stick-up-offset='46px', data-lg-stick-up='true', data-xl-stick-up='true', data-xxl-stick-up='true')
+          .rd-navbar-main-outer
+            .rd-navbar-main
+              // Navbar Panel
+              .rd-navbar-panel
+                // Navbar Toggle
+                button.rd-navbar-toggle(data-rd-navbar-toggle='.rd-navbar-nav-wrap')
+                  span
+                // Navbar logo
+                .rd-navbar-brand
+                  a.brand(href='index.html')
+                    img(src='images/logo-3roses-1024x279.png', alt='3 Roses Ménage', width='229', height='43')
+              .rd-navbar-main-element
+                .rd-navbar-nav-wrap
+                  // Navbar basket
+                  .rd-navbar-basket-wrap
+                    // Carte Shopping
+                    button.rd-navbar-basket.fl-bigmug-line-shopping198(data-rd-navbar-toggle='.cart-inline')
+                      span
+                    // les services choisis
+                    .cart-inline
+                      .cart-inline-header
+                        h5.cart-inline-title
+                          | Vous avez choisi:
+                          span  2
+                          |  Services
+                        h6.cart-inline-title
+                          | Prix Total:
+                          span  $800
+                      .cart-inline-body
+                        .cart-inline-item
+                          .unit.align-items-center
+                            .unit-left
+                              a.cart-inline-figure(href='#')
+                                img(src='images/produits/produit-1-100x100.jpg', alt='', width='100', height='100')
+                            .unit-body
+                              h6.cart-inline-name
+                                a(href='#') M&eacute;nage R&eacute;sidentiel
+                              div
+                                .group-xs.group-middle-custom
+                                  .table-cart-stepper
+                                    input.form-input(type='number', data-zeros='true', value='1', min='1', max='1000')
+                                  h6.cart-inline-title $550
+                        .cart-inline-item
+                          .unit.align-items-center
+                            .unit-left
+                              a.cart-inline-figure(href='#')
+                                img(src='images/produits/produit-2-100x100.jpeg', alt='', width='100', height='100')
+                            .unit-body
+                              h6.cart-inline-name
+                                a(href='#') Nettoyage Commercial
+                              div
+                                .group-xs.group-middle-custom
+                                  .table-cart-stepper
+                                    input.form-input(type='number', data-zeros='true', value='1', min='1', max='1000')
+                                  h6.cart-inline-title $250
+                      .cart-inline-footer
+                        .group-sm
+                          a.button.button-md.button-default-outline-2.button-wapasha(href='#') Ajouter
+                          a.button.button-md.button-primary.button-pipaluk(href='#') V&eacute;rifier
+                  // Navbar Recherche
+                  .rd-navbar-search
+                    button.rd-navbar-search-toggle(data-rd-navbar-toggle='.rd-navbar-search')
+                      span
+                    form.rd-search(action='#', method='GET')
+                      .form-wrap
+                        label.form-label(for='rd-navbar-search-form-input') Recherche...
+                        input#rd-navbar-search-form-input.rd-navbar-search-form-input.form-input(type='text', name='s', autocomplete='off')
+                      button.rd-search-form-submit.fl-bigmug-line-search74(type='submit')
+                  // Navbar Social Media
+                  .rd-navbar-share.fl-bigmug-line-share27(data-rd-navbar-toggle='.rd-navbar-share-list')
+                    ul.list-inline.rd-navbar-share-list
+                      li.rd-navbar-share-list-item
+                        a.icon.fa.fa-facebook(href='#')
+                      li.rd-navbar-share-list-item
+                        a.icon.fa.fa-twitter(href='#')
+                      li.rd-navbar-share-list-item
+                        a.icon.fa.fa-google-plus(href='#')
+                      li.rd-navbar-share-list-item
+                        a.icon.fa.fa-instagram(href='#')
+                    a.rd-navbar-basket.rd-navbar-basket-mobile.fl-bigmug-line-shopping198(href='cart-page.html')
+                      span 2
+                  // Navbar Menu principale
+                  ul.rd-navbar-nav
+                    li.rd-nav-item.active
+                      a.rd-nav-link(href='/') ACCUEIL
+                    li.rd-nav-item
+                      a.rd-nav-link(href='/services') SERVICES
+                    li.rd-nav-item
+                      a.rd-nav-link(href='/ecoproduits') ECO-PRODUITS
+                    li.rd-nav-item
+                      a.rd-nav-link(href='/tarifs') TARIFS
+                    li.rd-nav-item
+                      a.rd-nav-link(href='/apropos') &Agrave; PROPOS
+                    li.rd-nav-item
+                      a.rd-nav-link(href='/blog') BLOG
+                    li.rd-nav-item
+                      a.rd-nav-link(href='/faq') FAQ
+                .rd-navbar-project-hamburger(data-rd-navbar-toggle='.rd-navbar-main')
+                  .project-hamburger
+                    span.project-hamburger-arrow-top
+                    span.project-hamburger-arrow-center
+                    span.project-hamburger-arrow-bottom
+                  .project-close
+                    span
+                    span
+              // Navbar Menu droite
+              .rd-navbar-project.rd-navbar-classic-project
+                h4.text-spacing-50 Notre Travail
+                .rd-navbar-project-content.rd-navbar-classic-project-content
+                  .row(data-lightgallery='group')
+                    .col-12
+                      // Thumbnail Classic
+                      article.thumbnail.thumbnail-mary
+                        .thumbnail-mary-figure
+                          img(src='images/galleryDroite/gallery-small-image-1-330x240.png', alt='', width='330', height='240')
+                        // Zoom sur l'image
+                        .thumbnail-mary-caption
+                          a.icon.fl-bigmug-line-zoom60(href='images/galleryDroite/gallery-original-image-1-1200x800.jpg', data-lightgallery='item')
+                            img(src='images/galleryDroite/gallery-small-image-1-330x240.png', alt='', width='330', height='240')
+                    .col-12
+                      // Thumbnail Classic
+                      article.thumbnail.thumbnail-mary
+                        .thumbnail-mary-figure
+                          img(src='images/galleryDroite/gallery-small-image-2-330x240.png', alt='', width='330', height='240')
+                        .thumbnail-mary-caption
+                          a.icon.fl-bigmug-line-zoom60(href='images/galleryDroite/gallery-original-image-2-1200x800.jpg', data-lightgallery='item')
+                            img(src='images/galleryDroite/gallery-small-image-2-330x240.png', alt='', width='330', height='240')
+                    .col-12
+                      // Thumbnail Classic
+                      article.thumbnail.thumbnail-mary
+                        .thumbnail-mary-figure
+                          img(src='images/galleryDroite/gallery-small-image-3-330x240.png', alt='', width='330', height='240')
+                        .thumbnail-mary-caption
+                          a.icon.fl-bigmug-line-zoom60(href='images/galleryDroite/gallery-original-image-3-1200x800.jpg', data-lightgallery='item')
+                            img(src='images/galleryDroite/gallery-small-image-3-330x240.png', alt='', width='330', height='240')
+                    .col-12
+                      // Thumbnail Classic
+                      article.thumbnail.thumbnail-mary
+                        .thumbnail-mary-figure
+                          img(src='images/galleryDroite/gallery-small-image-4-330x240.png', alt='', width='330', height='240')
+                        .thumbnail-mary-caption
+                          a.icon.fl-bigmug-line-zoom60(href='images/galleryDroite/gallery-original-image-4-1200x800.jpg', data-lightgallery='item')
+                            img(src='images/galleryDroite/gallery-small-image-4-330x240.png', alt='', width='330', height='240')
+                    .col-12
+                      // Thumbnail Classic
+                      article.thumbnail.thumbnail-mary
+                        .thumbnail-mary-figure
+                          img(src='images/galleryDroite/gallery-small-image-5-330x240.png', alt='', width='330', height='240')
+                        .thumbnail-mary-caption
+                          a.icon.fl-bigmug-line-zoom60(href='images/galleryDroite/gallery-original-image-5-1200x800.jpg', data-lightgallery='item')
+                            img(src='images/galleryDroite/gallery-small-image-5-330x240.png', alt='', width='330', height='240')

@@ -1,0 +1,136 @@
+mixin nosprojet(projet)
+    
+    projet
+    // derniers Projets
+section.section.section-sm.section-fluid.bg-default.text-center
+  .container-fluid
+    h3.wow.fadeInLeft Dernier Nettoyage
+    p.quote-jean.wow.fadeInRight(data-wow-delay='.1s')
+      | #{DERNIERNETTOYAGE}
+      
+    .isotope-filters.isotope-filters-horizontal
+      //
+        <button
+        class="isotope-filters-toggle button button-md button-icon button-icon-right button-default-outline button-wapasha"
+        data-custom-toggle="#isotope-3"
+        data-custom-toggle-hide-on-blur="true"
+        >
+        <span class="icon fa fa-caret-down">Filter</span>
+        </button>
+      // filter l'affichage du gallery
+      ul#isotope-3.isotope-filters-list
+        li
+          a.active(href='#', data-isotope-filter='*', data-isotope-group='gallery') Tout
+        li
+          a(href='#', data-isotope-filter='Type 1', data-isotope-group='gallery') Appartements
+        li
+          a(href='#', data-isotope-filter='Type 2', data-isotope-group='gallery') Maisons
+        li
+          a(href='#', data-isotope-filter='Type 3', data-isotope-group='gallery') Etablissemets
+    .row.row-30.isotope(data-isotope-layout='fitRows', data-isotope-group='gallery', data-lightgallery='group')
+      .col-sm-6.col-lg-4.col-xxl-3.isotope-item.wow.fadeInLeft(data-filter='Type 3')
+        // gallery Type 3
+        article.thumbnail.thumbnail-classic.thumbnail-md
+          .thumbnail-classic-figure
+            img(src='images/galleryTravaux/small-3-420x350.png', alt='', width='420', height='350')
+          .thumbnail-classic-caption
+            .thumbnail-classic-title-wrap
+              a.icon.fl-bigmug-line-zoom60(href='images/galleryTravaux/original-3-1200x800.jpg', data-lightgallery='item')
+                img(src='images/galleryTravaux/small-3-420x350.png', alt='', width='420', height='350')
+              h5.thumbnail-classic-title
+                a(href='#') 379 Montr&eacute;al
+            p.thumbnail-classic-text
+              | Nous travaillons dur sur chaque projet pour fournir des
+              | r&eacute;sultats de premier ordre qui r&eacute;pondent &agrave; vos attentes..
+      .col-sm-6.col-lg-4.col-xxl-3.isotope-item.wow.fadeInLeft(data-filter='Type 2', data-wow-delay='.1s')
+        // gallery Type 2
+        article.thumbnail.thumbnail-classic.thumbnail-md
+          .thumbnail-classic-figure
+            img(src='images/galleryTravaux/small-2-420x350.png', alt='')
+          .thumbnail-classic-caption
+            .thumbnail-classic-title-wrap
+              a.icon.fl-bigmug-line-zoom60(href='images/galleryTravaux/original-2-1200x800.jpg', data-lightgallery='item')
+                img(src='images/galleryTravaux/small-2-420x350.png', alt='', width='420', height='350')
+              h5.thumbnail-classic-title
+                a(href='#') 64 laval
+            p.thumbnail-classic-text
+              | Nous travaillons dur sur chaque projet pour fournir des r&eacute;sultats de premier ordre qui r&eacute;pondent &agrave; vos attentes.
+      .col-sm-6.col-lg-4.col-xxl-3.isotope-item.wow.fadeInLeft(data-filter='Type 1', data-wow-delay='.2s')
+        // gallery Type 1
+        article.thumbnail.thumbnail-classic.thumbnail-md
+          .thumbnail-classic-figure
+            img(src='images/galleryTravaux/small-1-420x350.png', alt='')
+          .thumbnail-classic-caption
+            .thumbnail-classic-title-wrap
+              a.icon.fl-bigmug-line-zoom60(href='images/galleryTravaux/original-1-1200x800.jpg', data-lightgallery='item')
+                img(src='images/galleryTravaux/small-1-420x350.png', alt='', width='420', height='350')
+              h5.thumbnail-classic-title
+                a(href='#') 64 laval
+            p.thumbnail-classic-text
+              | Nous travaillons dur sur chaque projet pour fournir des r&eacute;sultats de premier ordre qui r&eacute;pondent &agrave; vos attentes.
+      .col-sm-6.col-lg-4.col-xxl-3.isotope-item.wow.fadeInLeft(data-filter='Type 3', data-wow-delay='.3s')
+        // gallery Type 1
+        article.thumbnail.thumbnail-classic.thumbnail-md
+          .thumbnail-classic-figure
+            img(src='images/galleryTravaux/small-3-420x350.png', alt='')
+          .thumbnail-classic-caption
+            .thumbnail-classic-title-wrap
+              a.icon.fl-bigmug-line-zoom60(href='images/galleryTravaux/original-3-1200x800.jpg', data-lightgallery='item')
+                img(src='images/galleryTravaux/small-3-420x350.png', alt='', width='420', height='350')
+              h5.thumbnail-classic-title
+                a(href='#') 64 laval
+            p.thumbnail-classic-text
+              | Nous travaillons dur sur chaque projet pour fournir des r&eacute;sultats de premier ordre qui r&eacute;pondent &agrave; vos attentes.
+      .col-sm-6.col-lg-4.col-xxl-3.isotope-item.wow.fadeInLeft(data-filter='Type 2')
+        // gallery Type 3
+        article.thumbnail.thumbnail-classic.thumbnail-md
+          .thumbnail-classic-figure
+            img(src='images/galleryTravaux/small-4-420x350.png', alt='', width='420', height='350')
+          .thumbnail-classic-caption
+            .thumbnail-classic-title-wrap
+              a.icon.fl-bigmug-line-zoom60(href='images/galleryTravaux/original-4-1200x800.jpg', data-lightgallery='item')
+                img(src='images/galleryTravaux/small-4-420x350.png', alt='', width='420', height='350')
+              h5.thumbnail-classic-title
+                a(href='#') 379 Montr&eacute;al
+            p.thumbnail-classic-text
+              | Nous travaillons dur sur chaque projet pour fournir des
+              | r&eacute;sultats de premier ordre qui r&eacute;pondent &agrave; vos attentes..
+      .col-sm-6.col-lg-4.col-xxl-3.isotope-item.wow.fadeInLeft(data-filter='Type 3', data-wow-delay='.1s')
+        // gallery Type 2
+        article.thumbnail.thumbnail-classic.thumbnail-md
+          .thumbnail-classic-figure
+            img(src='images/galleryTravaux/small-5-420x350.png', alt='')
+          .thumbnail-classic-caption
+            .thumbnail-classic-title-wrap
+              a.icon.fl-bigmug-line-zoom60(href='images/galleryTravaux/original-5-1200x800.jpg', data-lightgallery='item')
+                img(src='images/galleryTravaux/small-5-420x350.png', alt='', width='420', height='350')
+              h5.thumbnail-classic-title
+                a(href='#') 64 laval
+            p.thumbnail-classic-text
+              | Nous travaillons dur sur chaque projet pour fournir des r&eacute;sultats de premier ordre qui r&eacute;pondent &agrave; vos attentes.
+      .col-sm-6.col-lg-4.col-xxl-3.isotope-item.wow.fadeInLeft(data-filter='Type 1', data-wow-delay='.2s')
+        // gallery Type 1
+        article.thumbnail.thumbnail-classic.thumbnail-md
+          .thumbnail-classic-figure
+            img(src='images/galleryTravaux/small-6-420x350.png', alt='')
+          .thumbnail-classic-caption
+            .thumbnail-classic-title-wrap
+              a.icon.fl-bigmug-line-zoom60(href='images/galleryTravaux/original-6-1200x800.jpg', data-lightgallery='item')
+                img(src='images/galleryTravaux/small-6-420x350.png', alt='', width='420', height='350')
+              h5.thumbnail-classic-title
+                a(href='#') 64 laval
+            p.thumbnail-classic-text
+              | Nous travaillons dur sur chaque projet pour fournir des r&eacute;sultats de premier ordre qui r&eacute;pondent &agrave; vos attentes.
+      .col-sm-6.col-lg-4.col-xxl-3.isotope-item.wow.fadeInLeft(data-filter='Type 2', data-wow-delay='.3s')
+        // gallery Type 1
+        article.thumbnail.thumbnail-classic.thumbnail-md
+          .thumbnail-classic-figure
+            img(src='images/galleryTravaux/small-1-420x350.png', alt='')
+          .thumbnail-classic-caption
+            .thumbnail-classic-title-wrap
+              a.icon.fl-bigmug-line-zoom60(href='images/galleryTravaux/original-1-1200x800.jpg', data-lightgallery='item')
+                img(src='images/galleryTravaux/small-1-420x350.png', alt='', width='420', height='350')
+              h5.thumbnail-classic-title
+                a(href='#') 64 laval
+            p.thumbnail-classic-text
+              | Nous travaillons dur sur chaque projet pour fournir des r&eacute;sultats de premier ordre qui r&eacute;pondent &agrave; vos attentes.

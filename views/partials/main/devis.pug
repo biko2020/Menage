@@ -1,0 +1,64 @@
+mixin devis(devis)
+
+  devis 
+// DEMMANDE DEVIS
+section.section.section-sm.section-first.bg-default.text-center
+  .container
+    .row.row-30.justify-content-center
+      .col-md-4.col-lg-8.col-xl-9.text-lg-left.wow.fadeInUp
+          .container
+            article.title-classic
+              .title-classic-title
+                h3 DEMENDEZ VOTRE DEVIS
+                .box-icon-modern-decor
+              .title-classic-text
+                p Faire une estimation gratuite
+            article.box-icon-modern-custom
+              form.rd-form.rd-form-variant-2.rd-mailform(data-form-output='form-output-global', data-form-type='contact', method='post', action='bat/rd-mailform.php')
+                .row.row-14.gutters-14
+                  .col-md-6
+                    .form-wrap
+                      input#devis-name.form-input(type='text', name='name')
+                      label.form-label(for='devis-name') Votre Nom
+                  .col-md-6
+                    .form-wrap
+                      input#devis-email.form-input(type='text', name='email')
+                      label.form-label(for='devis-email') Votre email
+                  .col-md-6
+                    .form-wrap
+                      input#devis-telephone.form-input(type='text', name='telephone')
+                      label.form-label(for='devis-telephone') T&eacute;l&eacute;phone
+                  .col-md-6
+                    .form-wrap
+                      input#devis-codepostal.form-input(type='text', name='codepostal')
+                      label.form-label(for='devis-codepostal') Code posta
+                  .col-md-6
+                    .form-wrap
+                      select#devis-services.form-input(name='services')
+                        option(value='0') Services
+                        option(value='Ménage Résidentiel') M&eacute;nage R&eacute;sidentiel
+                        option(value='Ménage Commercial') M&eacute;nage Commercial
+                        option(value='Grand Ménage') Grand M&eacute;nage
+                        option(value='Ménage Après Rénovation') M&eacute;nage Apr&egrave;s R&eacute;novation
+                        option(value='Ménage Après Construction') M&eacute;nage Apr&egrave;s Construction
+                        option(value='Autre')
+                  .col-md-6
+                    .form-wrap
+                      select#devis-momentcontact.form-input(name='momentcontact')
+                        option(value='0') Meilleur moment pour vous contacter?
+                        option(value='Matin') Matin
+                        option(value='Jour') Jour
+                        option(value='Soir') Soir
+                  .col-md-6
+                    .form-wrap
+                      select#devis-typemenage.form-input(name='typemenage')
+                        option(value='0') &Agrave; quelle fr&eacute;quence-avez besoin du Nettoyage?
+                        option(value='une fois') Une fois
+                        option(value='Hebdomadairement ') Hebdomadairement 
+                        option(value='Bi-Mensuellement') Bi-Mensuellement
+                        option(value='Mensuellement') Mensuellement
+                  .col-12
+                    .form-wrap
+                      label.form-label(for='devis-message') Message
+                      textarea#devis-message.form-input.textarea-lg(name='message')
+                button.button.button-primary.button-pipaluk(type='submit') Envoyer

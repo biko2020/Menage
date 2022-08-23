@@ -1,0 +1,77 @@
+mixin temoignage(temoignage)
+
+    temoignage 
+// TÉMOIGNAGES
+section.section.section-sm.section-bottom-70.section-fluid.bg-default
+  .container-fluid
+    h3 LES T&Eacute;MOIGNAGES DE NOS CLIENTS
+    .row.row-50.row-sm
+      // Client 1
+      .col-md-6.col-xl-4.wow.fadeInRight
+        article.quote-modern.quote-modern-custom
+          .unit.unit-spacing-md.align-items-center
+            .unit-left
+              a.quote-modern-figure(href='#')
+                img.img-circles(src='images/temoignages/user-1-75x75.png', alt='', width='75', height='75')
+            .unit-body
+              h5.quote-modern-cite
+                a(href='#') Brahim Ait Oufkir
+              p.quote-modern-status Propri&eacute;taire de Maison
+          .quote-modern-text
+            p.q
+              | #{TEMOIGNAGE}
+      // Client 2
+      .col-md-6.col-xl-4.wow.fadeInRight(data-wow-delay='.1s')
+        article.quote-modern.quote-modern-custom
+          .unit.unit-spacing-md.align-items-center
+            .unit-left
+              a.quote-modern-figure(href='#')
+                img.img-circles(src='images/temoignages/user-2-75x75.png', alt='', width='75', height='75')
+            .unit-body
+              h5.quote-modern-cite
+                a(href='#') Jill Petrova
+              p.quote-modern-status Propri&eacute;taire de Maison
+          .quote-modern-text
+            p.q
+              | #{TEMOIGNAGE}
+      // Client 3
+      .col-md-6.col-xl-4.wow.fadeInRight(data-wow-delay='.2s')
+        article.quote-modern.quote-modern-custom
+          .unit.unit-spacing-md.align-items-center
+            .unit-left
+              a.quote-modern-figure(href='#')
+                img.img-circles(src='images/temoignages/user-3-75x75.png', alt='', width='75', height='75')
+            .unit-body
+              h5.quote-modern-cite
+                a(href='#') Jisika
+              p.quote-modern-status Propri&eacute;taire de Maison
+          .quote-modern-text
+            p.q
+              | #{TEMOIGNAGE}
+    // Modal Temoignage
+    a.button.button-secondary.button-pipaluk(href='#temoignage') VOTRE AVIS ICI
+    #temoignage.overlay
+      .popup
+        h5.font-weight-normal R&eacute;sumez votre avis ou mettez en &eacute;vidence un d&eacute;tail int&eacute;ressant 
+        a.close(href='#') &times;
+        .content
+          form.rd-form.rd-mailform(name='formTemoignage', method='post', action='')
+            .form-wrap
+              input#temoignage-name.form-input(type='text', name='name', data-constraints='@Required')
+              label.form-label(for='temoignage-name') Nom
+            .form-wrap
+              input#temoignage-email.form-input(value='999999', type='email', name='email', data-constraints='@Email @Required')
+              label.form-label(for='temoignage-email') E-mail
+            .form-wrap
+              label.form-label(for='messageWhatsapp') &Eacute;crire votre avis
+              textarea#messageWhatsapp.form-input(name='messageWhatsapp')
+            // star Rating
+            .satr_rating
+              button.star &star;
+              button.star &star;
+              button.star &star;
+              button.star &star;
+              button.star &star;
+              p.starCounter 0 / 5
+            script.
+            button.button.button-block.button-ujarak.button-secondary(onclick='sendToWhatsApp()') Envoyer

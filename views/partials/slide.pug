@@ -1,0 +1,66 @@
+mixin slide()
+
+  // Slider de Milieu
+  section.section.swiper-container.swiper-slider.swiper-slider-classic(data-loop='true', data-autoplay='5000', data-simulate-touch='true', data-direction='vertical', data-nav='false')
+    .swiper-wrapper.text-center
+      // slide N 1
+      .swiper-slide.context-dark(data-slide-bg='images/slide/slider-1-1770x742.jpg')
+        .swiper-slide-caption.section-md
+          .container
+            h1(data-caption-animate='fadeInLeft', data-caption-delay='0')
+              | M&Eacute;NAGE &Eacute;COLOGIQUE
+            p.text-width-large(data-caption-animate='fadeInRight', data-caption-delay='100')
+              | Rien de tel que le m&eacute;nage &eacute;cologique pour maintenir notre
+              | environnement propre et sain, et veiller &agrave; notre bien-&ecirc;tre.
+            a.button.button-primary.button-ujarak(href='#', data-caption-animate='fadeInUp', data-caption-delay='200') M&Eacute;NAGE &Eacute;COLOGIQUE
+          // Logo Bio
+          .col-md-6.col-lg-5.col-xl-2
+            article.team-classic.team-classic-lg
+              a.team-classic-figure(href='#')
+                img(src='images/quote-jean.png', alt='')
+          // 
+      // slide N 2
+      .swiper-slide.context-dark(data-slide-bg='images/slide/slider-2-1770x742.jpg')
+        .swiper-slide-caption.section-md
+          .container
+            h1(data-caption-animate='fadeInLeft', data-caption-delay='0')
+              | M&Eacute;NAGE PROFESSIONNELLE
+            p.text-width-large(data-caption-animate='fadeInRight', data-caption-delay='100')
+              | Nous sommes engag&eacute;s &agrave; fournir d&rsquo;excellents services gr&acirc;ce &agrave;
+              | notre concept d&rsquo;entretien m&eacute;nager servi par des &eacute;quipes bien
+              | form&eacute;es, effectue au quotidien l&rsquo;entretien et le nettoyage de
+              | tous locaux.
+            a.button.button-primary.button-ujarak(href='#', data-caption-animate='fadeInUp', data-caption-delay='200') M&Eacute;NAGE PROFESSIONNELLE
+          // Logo Bio
+          .col-md-6.col-lg-5.col-xl-2
+            article.team-classic.team-classic-lg
+              a.team-classic-figure(href='#')
+                img(src='images/quote-jean.png', alt='')
+          // 
+      // slide N 3
+      .swiper-slide.context-dark(data-slide-bg='images/slide/slider-3-1770x742.jpg')
+        .swiper-slide-caption.section-md
+          .container
+            h1(data-caption-animate='fadeInLeft', data-caption-delay='0')
+              | 3 Roses M&eacute;nage s&apos;occupe de tout!
+            p.text-width-large(data-caption-animate='fadeInRight', data-caption-delay='100')
+              | Nous apportons une approche personnelle et efficace chez
+              | chacun de nos clients. N&rsquo;h&eacute;sitez pas &agrave; nous contacter pour
+              | obtenir une estimation pour des besoins r&eacute;sidentiaux,
+              | commerciaux, institutionnels, gouvernementaux, industriels et
+              | en nettoyage apr&egrave;s construction.
+            a.button.button-primary.button-ujarak(href='#', data-caption-animate='fadeInUp', data-caption-delay='200') DEMANDER UN DEVIS
+          // Logo Bio
+          .col-md-6.col-lg-5.col-xl-2
+            article.team-classic.team-classic-lg
+              a.team-classic-figure(href='#')
+                img(src='images/quote-jean.png', alt='')
+          // 
+    // slider Pagination
+    .swiper-pagination__module
+      .swiper-pagination__fraction
+        span.swiper-pagination__fraction-index 00
+        span.swiper-pagination__fraction-divider /
+        span.swiper-pagination__fraction-count 00
+      .swiper-pagination__divider
+      .swiper-pagination

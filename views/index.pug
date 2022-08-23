@@ -1,0 +1,28 @@
+extends layout
+  
+block content
+  //- Animation de chargement 
+  .preloader
+    .preloader-body
+      .cssload-container
+        span
+        span
+        span
+        span
+  //- page
+  .page
+    //- header
+    include partials/header
+    +header
+
+    //- slide Barre
+    include partials/slide
+    +slide
+
+    //- Main
+    include partials/main/main
+    +main
+
+    //- footer
+    include partials/footer  
+    +footer

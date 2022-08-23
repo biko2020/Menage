@@ -1,0 +1,29 @@
+extends ../layout
+
+block content 
+
+    //- Animation de chargement 
+    .preloader
+        .preloader-body
+        .cssload-container
+            span
+            span
+            span
+            span
+    //- page
+    .page 
+      //- header
+      include ../partials/header
+      +header 
+
+
+      //- Main
+      include ../services/boites 
+      +boites 
+      include ../partials/main/devis
+      +devis
+
+
+      //- footer
+      include ../partials/footer
+      +footer
