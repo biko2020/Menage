@@ -18,23 +18,23 @@ section.section.section-sm.section-first.bg-default.text-center
                 .row.row-14.gutters-14
                   .col-md-6
                     .form-wrap
-                      input#devisName.form-input(type='text', name='name')
+                      input#devisName.form-input(type='text', name='name', data-constraints='@Required')
                       label.form-label(for='devisName') Votre Nom
                   .col-md-6
                     .form-wrap
-                      input#devisEmail.form-input(type='text', name='email')
+                      input#devisEmail.form-input(type='email', name='email', data-constraints='@Email @Required')
                       label.form-label(for='devisEmail') Votre email
                   .col-md-6
                     .form-wrap
-                      input#devisTelephone.form-input(type='text', name='telephone')
+                      input#devisTelephone.form-input(type='text', name='telephone', data-constraints='@Numeric')
                       label.form-label(for='devisTelephone') T&eacute;l&eacute;phone
                   .col-md-6
                     .form-wrap
-                      input#devisCodepostal.form-input(type='text', name='codepostal')
+                      input#devisCodepostal.form-input(type='text', name='codepostal', data-constraints='@Required')
                       label.form-label(for='devisCodepostal') Code posta
                   .col-md-6
                     .form-wrap
-                      select.form-input#devisServices(name='services' type='select')
+                      select.form-input#devisServices(name='services' type='select', data-constraints='@Required')
                         //- select#devis-services.form-input(name='services')
                         option(value='0') Services
                         option(value='Ménage Résidentiel') M&eacute;nage R&eacute;sidentiel
@@ -45,7 +45,7 @@ section.section.section-sm.section-first.bg-default.text-center
                         option(value='Autre')
                   .col-md-6
                     .form-wrap
-                      select.form-input#devisMomentcontact(name='momentcontact' type='select')
+                      select.form-input#devisMomentcontact(name='momentcontact' type='select' , data-constraints='@Required')
                         option(value='0') Meilleur moment pour vous contacter?
                         option(value='Matin') Matin
                         option(value='Jour') Jour
@@ -61,5 +61,5 @@ section.section.section-sm.section-first.bg-default.text-center
                   .col-12
                     .form-wrap
                       label.form-label(for='devisMessage') Message
-                      textarea#devisMessage.form-input.textarea-lg(name='message')
+                      textarea#devisMessage.form-input.textarea-lg(name='message', data-constraints='@Required')
                 button.button.button-primary.button-pipaluk(type='submit') Envoyer
