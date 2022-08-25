@@ -50,8 +50,8 @@ app.post("/devis", (req, res) => {
     host: "smtp.3rosesmenage.net",
     Port: 465,
     auth: {
-      user: "",
-      pass: "",
+      user: "devis@3rosesmenage.net",
+      pass: "#OpenDevis2023!",
     },
     tls: {
       rejectUnauthorized: false
