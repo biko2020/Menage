@@ -16,15 +16,22 @@ html
     link(rel="stylesheet" href="stylesheets/style.css") 
     link(rel="stylesheet" href="stylesheets/modal.css")
     link(rel="stylesheet" href="stylesheets/accordion.css")
+
     //- Title
     title #{title}
     //- scripts
-    include partials/script
-    +scripts
+    //- include partials/script
+   
     
   body
-    block content
+    block content  
+    //- +scripts
+    script(src="javascripts/core.min.js") 
     //- script navbar 
     script(src="javascripts/script.js")
-    //- script stars temoignange
-    script(src="javascripts/stars.js") 
+      //- script stars temoignange
+    script(src="javascripts/stars.js")
+    //- script send whatsapp Message 
+    script(src="javascripts/sendWhatsappMessage.js")
+    //- script send email
+    script(src="javascripts/sendMail.js")
