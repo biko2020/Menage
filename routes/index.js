@@ -49,4 +49,7 @@ router.get("/faq", function (req, res, next) {
   res.render("pages/faq", { title: "F.A.Q" });
 });
 
+router.get("/devis", function(req, res, next){
+  res.sendFile(path.join(__dirname + '../partials/main/devis'))
+})
 module.exports = router;
