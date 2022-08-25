@@ -14,27 +14,28 @@ section.section.section-sm.section-first.bg-default.text-center
               .title-classic-text
                 p Faire une estimation gratuite
             article.box-icon-modern-custom
-              form.rd-form.rd-form-variant-2.rd-mailform(data-form-output='form-output-global', data-form-type='contact', method='post', action='bat/rd-mailform.php')
+              form#formContact.rd-form.rd-form-variant-2.rd-mailform(data-form-output='form-output-global' data-form-type='contact')
                 .row.row-14.gutters-14
                   .col-md-6
                     .form-wrap
-                      input#devis-name.form-input(type='text', name='name')
-                      label.form-label(for='devis-name') Votre Nom
+                      input#devisName.form-input(type='text', name='name')
+                      label.form-label(for='devisName') Votre Nom
                   .col-md-6
                     .form-wrap
-                      input#devis-email.form-input(type='text', name='email')
-                      label.form-label(for='devis-email') Votre email
+                      input#devisEmail.form-input(type='text', name='email')
+                      label.form-label(for='devisEmail') Votre email
                   .col-md-6
                     .form-wrap
-                      input#devis-telephone.form-input(type='text', name='telephone')
-                      label.form-label(for='devis-telephone') T&eacute;l&eacute;phone
+                      input#devisTelephone.form-input(type='text', name='telephone')
+                      label.form-label(for='devisTelephone') T&eacute;l&eacute;phone
                   .col-md-6
                     .form-wrap
-                      input#devis-codepostal.form-input(type='text', name='codepostal')
-                      label.form-label(for='devis-codepostal') Code posta
+                      input#devisCodepostal.form-input(type='text', name='codepostal')
+                      label.form-label(for='devisCodepostal') Code posta
                   .col-md-6
                     .form-wrap
-                      select#devis-services.form-input(name='services')
+                      select.form-input#devisServices(name='services' type='select')
+                        //- select#devis-services.form-input(name='services')
                         option(value='0') Services
                         option(value='Ménage Résidentiel') M&eacute;nage R&eacute;sidentiel
                         option(value='Ménage Commercial') M&eacute;nage Commercial
@@ -44,14 +45,14 @@ section.section.section-sm.section-first.bg-default.text-center
                         option(value='Autre')
                   .col-md-6
                     .form-wrap
-                      select#devis-momentcontact.form-input(name='momentcontact')
+                      select.form-input#devisMomentcontact(name='momentcontact' type='select')
                         option(value='0') Meilleur moment pour vous contacter?
                         option(value='Matin') Matin
                         option(value='Jour') Jour
                         option(value='Soir') Soir
                   .col-md-6
                     .form-wrap
-                      select#devis-typemenage.form-input(name='typemenage')
+                      select.form-input#devisTypemenage(name='typemenage' type='select')
                         option(value='0') &Agrave; quelle fr&eacute;quence-avez besoin du Nettoyage?
                         option(value='une fois') Une fois
                         option(value='Hebdomadairement ') Hebdomadairement 
@@ -59,6 +60,6 @@ section.section.section-sm.section-first.bg-default.text-center
                         option(value='Mensuellement') Mensuellement
                   .col-12
                     .form-wrap
-                      label.form-label(for='devis-message') Message
-                      textarea#devis-message.form-input.textarea-lg(name='message')
+                      label.form-label(for='devisMessage') Message
+                      textarea#devisMessage.form-input.textarea-lg(name='message')
                 button.button.button-primary.button-pipaluk(type='submit') Envoyer
