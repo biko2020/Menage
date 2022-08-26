@@ -1,25 +1,24 @@
 mixin NosService()
 
     NosServices
-// Slider de Milieu
-section.section.section-sm.section-first.bg-default.text-center
-    
-    .swiper-wrapper.text-center
-      // slide N 3
-      article.thumbnail.thumbnail-classic.thumbnail-md
-          .thumbnail-classic-figure
-            img(src='images/nosServices/slider-1-1770x742.jpg', alt='', width='1770', height='742')
-          .thumbnail-classic-caption
-            p.thumbnail-classic-text
-              | Nous travaillons dur sur chaque projet pour fournir des
-              | r&eacute;sultats de premier ordre qui r&eacute;pondent &agrave; vos attentes..
-            a.button.button-primary.button-ujarak(href='#', data-caption-animate='fadeInUp', data-caption-delay='200') DEMANDER UN DEVIS
-            
-          // Logo Bio
-          .col-md-6.col-lg-5.col-xl-2
-            article.team-classic.team-classic-lg
-              a.team-classic-figure(href='#')
-                img(src='images/quote-jean.png', alt='')
+    // Slider de Milieu
+    section.section.swiper-container.swiper-slider.swiper-slider-classic(data-loop='false', data-autoplay='5000', data-simulate-touch='true', data-direction='vertical', data-nav='false')
+        .swiper-wrapper.text-center
+          // image barre
+          .swiper-slide.context-dark(data-slide-bg='images/nosServices/service-1-1770x742.jpg')
+            .swiper-slide-caption.section-md
+              .container
+                h1(data-caption-animate='fadeInLeft', data-caption-delay='0')
+                  | M&Eacute;NAGE &Eacute;COLOGIQUE
+                p.text-width-large(data-caption-animate='fadeInRight', data-caption-delay='100')
+                  | Nous sélectionnons et formons nos équipes avec la plus grande rigueur pour vous offrir un service de ménage parfait et régulier. Toutes nos équipes suivent des procédures de nettoyage que nous avons établies pour assurer un résultat constant et votre satisfaction continue. Notre professionnalisme est la garantie que vous aurez toujours une maison propre, nette et impeccable 
+                a.button.button-primary.button-ujarak(href='/tarifs', data-caption-animate='fadeInUp', data-caption-delay='200') DEMANDE DEVIS
+                
+              // Logo Bio
+              .col-md-6.col-lg-5.col-xl-2
+                article.team-classic.team-classic-lg
+                  a.team-classic-figure(href='#')
+                    img(src='images/quote-jean.png', alt='')
 
     // boites Nos Services 
     .container
