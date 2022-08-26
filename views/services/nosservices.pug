@@ -4,7 +4,7 @@ mixin NosService()
     // Slider de Milieu
     section.section.swiper-container.swiper-slider.swiper-slider-classic(data-loop='false', data-autoplay='5000', data-simulate-touch='true', data-direction='vertical', data-nav='false')
         .swiper-wrapper.text-center
-          // image barre
+          // image banniere
           .swiper-slide.context-dark(data-slide-bg='images/nosServices/service-1-1770x742.jpg')
             .swiper-slide-caption.section-md
               .container
@@ -21,51 +21,86 @@ mixin NosService()
                     img(src='images/quote-jean.png', alt='')
 
     // boites Nos Services 
-    .container
-    .row.row-30.justify-content-center
-      .col-lg-7.col-xl-6
-        .row.row-30
-          .col-sm-12.wow.fadeInRight
-                h3.box-icon-modern-big-title Nos Services
-                .box-icon-modern-decor
-    .row.row-30.justify-content-center
-      .col-sm-12.wow.fadeInRight
-        .row.row-30
-          .col-sm-4.wow.fadeInRight(data-wow-delay='.1s')
-            article.box-icon-modern.box-icon-modern-2
-              .box-icon-modern-icon.fl-bigmug-line-cropping1
-              h5.box-icon-modern-title
-                a(href='#') M&eacute;nage R&eacute;sidentiel
-              .box-icon-modern-decor
-              p.box-icon-modern-text
-                | Le service d&rsquo;entretien m&eacute;nager r&eacute;gulier que vous offre
-                | Roses M&eacute;nage, dans la r&eacute;gion du Grand Montr&eacute;al
-                br
-                a.button.button-md.button-default-outline-2.button-wapasha(href='#Residentiel') lire plus ...
-               
-                
-          .col-sm-4.wow.fadeInRight(data-wow-delay='.2.s')
-            article.box-icon-modern.box-icon-modern-2
-              .box-icon-modern-icon.fl-bigmug-line-paintbrush9
-              h5.box-icon-modern-title
-                a(href='#') Nettoyage Commercial
-              .box-icon-modern-decor
-              p.box-icon-modern-text
-                | Notre soci&eacute;t&eacute; d&rsquo;entretien intervient pour l&rsquo;entretien et
-                | le nettoyage de tous types de locaux professionnels et
-                | lieux de travail.
-                br
-                a.button.button-md.button-default-outline-2.button-wapasha(href='#Commercial') lire plus ...
+    section.section.section-sm.section-first.bg-default.text-center
+      .container
+        .row.row-30.justify-content-center
+          .col-lg-7.col-xl-6
+            .row.row-30
+              .col-sm-12.wow.fadeInRight
+                    h3.box-icon-modern-big-title Nos Services
+                    .box-icon-modern-decor
 
-          .col-sm-4.wow.fadeInRight(data-wow-delay='.3s')
+        .row.row-30.justify-content-center
+          .col-sm-12.wow.fadeInRight
+            .row.row-30
+
+              // boite -1
+              .col-sm-4.wow.fadeInRight(data-wow-delay='.1s')
+                article.box-icon-modern.box-icon-modern-2
+                  img(src='images/nosServices/index-0-513x561.png')
+                  .box-icon-modern-icon.fl-bigmug-line-cropping1
+                  h5.box-icon-modern-title
+                    a(href='#Residentiel') M&eacute;nage R&eacute;sidentiel
+                  .box-icon-modern-decor
+                  p.box-icon-modern-text
+                    | Le service d’entretien ménager régulier que vous offre Roses Ménage, dans la région du Grand Montréal, est parfait pour vous si ce que vous souhaitez trouver une aide professionnelle et efficace pour avoir une maison toujours nette et impeccable.
+                    br
+                    a.button.button-md.button-default-outline-2.button-wapasha(href='#Residentiel') lire plus ...
+                  
+              // boite-2     
+              .col-sm-4.wow.fadeInRight(data-wow-delay='.2.s')
+                article.box-icon-modern.box-icon-modern-2
+                  img(src='images/nosServices/index-2-513x561.png')
+                  .box-icon-modern-icon.fl-bigmug-line-paintbrush9
+                  h5.box-icon-modern-title
+                    a(href='#Commercial') Nettoyage Commercial
+                  .box-icon-modern-decor
+                  p.box-icon-modern-text
+                    | Un espace de bureau propre améliore la productivité de vos employés; crée une impression positive et durable pour les clients; et augmente les notes de satisfaction des locataires. Notre société d’entretien intervient pour l’entretien et le nettoyage de tous types de locaux professionnels et lieux de travail.
+
+                    br
+                    a.button.button-md.button-default-outline-2.button-wapasha(href='#Commercial') lire plus ...
+
+              // boite -3
+              .col-sm-4.wow.fadeInRight(data-wow-delay='.3s')
+                article.box-icon-modern.box-icon-modern-2
+                  img(src='images/nosServices/index-3-513x561.png')
+                  .box-icon-modern-icon.fl-bigmug-line-industrie
+                  h5.box-icon-modern-title
+                    a(href='#Industriel') Nettoyage Industriel
+                  .box-icon-modern-decor
+                  p.box-icon-modern-text
+                    | Le nettoyage d’un bâtiment industriel est un métier spécifique qui nécessite une certaine maîtrise de l’univers industriel afin de comprendre ses contraintes, ses obligations et ses objectifs.
+                    br
+                    a.button.button-md.button-default-outline-2.button-wapasha(href='#Industriel') lire plus ...
+
+    // Nettoyage résidentiel
+    section.section.section-sm.section-fluid.bg-default
+      .container-fluid
+        h3.wow.fadeInLeft
+          a(name='Residentiel')
+          | MÉNAGE RÉSIDENTIEL
+        p.wow.fadeInRight(data-wow-delay='.1s')
+          | Vous êtes débordées par le travail et n’avez pas tout le temps libre nécessaire pour faire le ménage à votre domicile ? Vous souhaitez avoir une maison éclatante de propreté et de fraîcheur, semaine après semaine ? Vous recherchez un service de ménage résidentiel fiable et de haute qualité ?
+          | Le service d’entretien ménager régulier que vous offre Roses Ménage, dans la région du Grand Montréal, est parfait pour vous si ce que vous souhaitez trouver une aide professionnelle et efficace pour avoir une maison toujours nette et impeccable.
+
+        .row.row-sm.row-30.justify-content-center
+         .col-md-6.col-lg-5.col-xl-3.wow.fadeInRight 
+           article.team-classic.team-classic-lg
+            img(src='images/nosServices/index-1-513x561.png')
+            
+         .col-md-8.col-lg-5.col-xl-3.wow.fadeInRight 
             article.box-icon-modern.box-icon-modern-2
-              .box-icon-modern-icon.fl-bigmug-line-industrie
-              h5.box-icon-modern-title
-                a(href='#') Nettoyage Industriel
-              .box-icon-modern-decor
-              p.box-icon-modern-text
-                | Le nettoyage d&rsquo;un b&acirc;timent industriel est un m&eacute;tier
-                | sp&eacute;cifique qui n&eacute;cessite une certaine ma&icirc;trise de
-                | l&rsquo;univers industriel.
-                br
-                a.button.button-md.button-default-outline-2.button-wapasha(href='#Industriel') lire plus ...
+              h3.quote-jean Plan de nettoyage lors d’une visite
+              h5 Cuisine
+              ul
+              li Épousseter les lampes et dessus des meubles
+              li Nettoyer et purifier les éviers
+              li Nettoyer la fenêtre de la cuisine
+              li Nettoyer et purifier les comptoirs
+              li Nettoyer et polir l’extérieur des armoires
+              li Nettoyer et polir l’extérieur des appareils électroménagers,
+              li Nettoyer l’extérieur et l’intérieur de micro-onde
+              li Passer la balayeuse sur les planchers
+              li Laver et assainir les planchers    
+      
