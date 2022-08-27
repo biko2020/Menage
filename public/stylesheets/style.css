@@ -417,7 +417,42 @@ a[href*='tel'], a[href*='mailto'] {
 	box-shadow: 0 0 13px -4px rgba(0, 0, 0, 0.17);
 	transition: all .3s ease;
 }
+.box-icon-modern-w40 {
+	text-align: auto;
+	max-width: 699.5px;
+	min-height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 66px 15px 50px;
+	background: #ffffff;
+	box-shadow: 0 0 13px -4px rgba(0, 0, 0, 0.17);
+	transition: all .3s ease;
+}
 
+.box-icon-modern-w60 {
+	text-align: left;
+	max-width: 699.5px;
+	min-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 66px 15px 50px;
+	background: #ffffff;
+	box-shadow: 0 0 13px -4px rgba(0, 0, 0, 0.17);
+	transition: all .3s ease;
+}
+
+
+.box-icon-modern-w70 {
+	text-align: center;
+	max-width: 70%;
+	min-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 66px 15px 50px;
+	background: #ebf7fbfc; 
+	box-shadow: 0 0 13px -4px rgba(0, 0, 0, 0.17);
+	transition: all .3s ease;
+}
 .box-icon-modern-2 {
 	padding-top: 42px;
 	padding-bottom: 35px;
