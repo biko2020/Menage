@@ -1,11 +1,12 @@
 var express = require("express");
 var router = express.Router();
+var path = require("path");
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
   //- fichier data
   const data = {
-    title: "3Roses Ménage",
+    title: "Home",
     PROPOS:
       "Nous apportons une approche personnelle et efficace chez chacun de nos clients. N’hésitez pas à nous contacter pour obtenir une estimation pour des besoins résidentiaux, commerciaux, institutionnels, gouvernementaux, industriels et en nettoyage après construction.",
     DERNIERNETTOYAGE:
@@ -20,7 +21,7 @@ router.get("/", function (req, res, next) {
 });
 /* Get Services page */
 router.get("/services", function (req, res, next) {
-  res.render("pages/services", { title: "services" });
+  res.render("pages/services", { title: "services"});
 });
 
 /* Get Eco-Produits page */
@@ -49,7 +50,7 @@ router.get("/faq", function (req, res, next) {
   res.render("pages/faq", { title: "F.A.Q" });
 });
 
-router.get("/devis", function(req, res, next){
-  res.sendFile(path.join(__dirname + '../partials/main/devis'))
-})
+router.get("/devis", function (req, res, next) {
+  res.sendFile(path.join(__dirname + "../partials/main/devis"));
+});
 module.exports = router;

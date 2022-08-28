@@ -458,7 +458,7 @@ a[href*='tel'], a[href*='mailto'] {
 	background: #f6e7c1fc; 
 }
 .bg-box-w70-2 {
-	background: #c9d0d3; 
+	background: #868e96; 
 }
 .bg-box-w70-3 {
 	background: #c47142e2; 
@@ -7394,6 +7394,7 @@ html.tablet .ui-to-top {
 .rd-navbar-panel, .rd-navbar-static .rd-menu, .rd-navbar-fixed .rd-navbar-nav-wrap, .rd-navbar-fixed .rd-navbar-submenu, .rd-navbar-project {
 	transition: 0.35s all cubic-bezier(0.65, 0.05, 0.36, 1);
 }
+
 
 .rd-navbar--no-transition, .rd-navbar--no-transition * {
 	transition: none !important;

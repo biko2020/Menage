@@ -19,52 +19,6 @@ mixin header(header)
                     img(src='images/logo-3roses-1024x279.png', alt='3 Roses Ménage', width='229', height='43')
               .rd-navbar-main-element
                 .rd-navbar-nav-wrap
-                  // Navbar basket
-                  .rd-navbar-basket-wrap
-                    // Carte Shopping
-                    button.rd-navbar-basket.fl-bigmug-line-shopping198(data-rd-navbar-toggle='.cart-inline')
-                      span
-                    // les services choisis
-                    .cart-inline
-                      .cart-inline-header
-                        h5.cart-inline-title
-                          | Vous avez choisi:
-                          span  2
-                          |  Services
-                        h6.cart-inline-title
-                          | Prix Total:
-                          span  $800
-                      .cart-inline-body
-                        .cart-inline-item
-                          .unit.align-items-center
-                            .unit-left
-                              a.cart-inline-figure(href='#')
-                                img(src='images/produits/produit-1-100x100.jpg', alt='', width='100', height='100')
-                            .unit-body
-                              h6.cart-inline-name
-                                a(href='#') M&eacute;nage R&eacute;sidentiel
-                              div
-                                .group-xs.group-middle-custom
-                                  .table-cart-stepper
-                                    input.form-input(type='number', data-zeros='true', value='1', min='1', max='1000')
-                                  h6.cart-inline-title $550
-                        .cart-inline-item
-                          .unit.align-items-center
-                            .unit-left
-                              a.cart-inline-figure(href='#')
-                                img(src='images/produits/produit-2-100x100.jpeg', alt='', width='100', height='100')
-                            .unit-body
-                              h6.cart-inline-name
-                                a(href='#') Nettoyage Commercial
-                              div
-                                .group-xs.group-middle-custom
-                                  .table-cart-stepper
-                                    input.form-input(type='number', data-zeros='true', value='1', min='1', max='1000')
-                                  h6.cart-inline-title $250
-                      .cart-inline-footer
-                        .group-sm
-                          a.button.button-md.button-default-outline-2.button-wapasha(href='#') Ajouter
-                          a.button.button-md.button-primary.button-pipaluk(href='#') V&eacute;rifier
                   // Navbar Recherche
                   .rd-navbar-search
                     button.rd-navbar-search-toggle(data-rd-navbar-toggle='.rd-navbar-search')
@@ -81,27 +35,28 @@ mixin header(header)
                         a.icon.fa.fa-facebook(href='#')
                       li.rd-navbar-share-list-item
                         a.icon.fa.fa-twitter(href='#')
-                      li.rd-navbar-share-list-item
-                        a.icon.fa.fa-google-plus(href='#')
+                      //- li.rd-navbar-share-list-item
+                      //-   a.icon.fa.fa-google-plus(href='#')
                       li.rd-navbar-share-list-item
                         a.icon.fa.fa-instagram(href='#')
-                    a.rd-navbar-basket.rd-navbar-basket-mobile.fl-bigmug-line-shopping198(href='cart-page.html')
-                      span 2
+                      //- *****************shopping pour ecran responsive   
+                    //- a.rd-navbar-basket.rd-navbar-basket-mobile.fl-bigmug-line-shopping198(href='#')
+                    //-   span 2
                   // Navbar Menu principale
                   ul.rd-navbar-nav
-                    li.rd-nav-item.active
+                    li.rd-nav-item(class=(title === "Home" ? 'active' : ''))
                       a.rd-nav-link(href='/') ACCUEIL
-                    li.rd-nav-item
+                    li.rd-nav-item(class=(title === "services" ? 'active' : ''))
                       a.rd-nav-link(href='/services') SERVICES
-                    li.rd-nav-item
+                    li.rd-nav-item(class=(title === "ecoproduits" ? 'active' : ''))
                       a.rd-nav-link(href='/ecoproduits') ECO-PRODUITS
-                    li.rd-nav-item
+                    li.rd-nav-item(class=(title === "tarifs" ? 'active' : ''))
                       a.rd-nav-link(href='/tarifs') TARIFS
-                    li.rd-nav-item
+                    li.rd-nav-item(class=(title === "apropos" ? 'active' : ''))
                       a.rd-nav-link(href='/apropos') &Agrave; PROPOS
-                    li.rd-nav-item
+                    li.rd-nav-item(class=(title === "blog" ? 'active' : ''))
                       a.rd-nav-link(href='/blog') BLOG
-                    li.rd-nav-item
+                    li.rd-nav-item(class=(title === "F.A.Q" ? 'active' : ''))
                       a.rd-nav-link(href='/faq') FAQ
                 // ---- Navbar principal      
                 .rd-navbar-project-hamburger(data-rd-navbar-toggle='.rd-navbar-main')
