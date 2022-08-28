@@ -1274,6 +1274,10 @@ hr {
 	text-transform: uppercase;
 }
 
+.text-black {
+	color : black
+}
+
 .text-decoration-lines-content::before, .text-decoration-lines-content::after {
 	position: absolute;
 	content: '';

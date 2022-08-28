@@ -1,0 +1,120 @@
+mixin notreApropos()
+
+    notreApropos
+    
+    // Slider de Milieu
+    section.section.swiper-container.swiper-slider.swiper-slider-classic(data-loop='false', data-autoplay='5000', data-simulate-touch='true', data-direction='vertical', data-nav='false')
+        .swiper-wrapper.text-center
+          // image banniere
+          .swiper-slide.context-dark(data-slide-bg='images/apropos/apropos-1-1770x742.png')
+            .swiper-slide-caption.section-md
+              .container
+                h1(data-caption-animate='fadeInLeft', data-caption-delay='0')
+                  | À Propos
+                p.text-black.text-width-large(data-caption-animate='fadeInRight', data-caption-delay='100')
+                  | Nous sommes une entreprise de nettoyage résidentiel et commercial, avec une grande expérience dans le domaine. Notre mission est d’offrir un service professionnel et de haute qualité à tous nos clients car, leur satisfaction est notre but premier.
+                a.button.button-primary.button-ujarak(href='/tarifs', data-caption-animate='fadeInUp', data-caption-delay='200') DEMANDE DEVIS
+                
+              // Logo Bio
+              .col-md-6.col-lg-5.col-xl-2
+                article.team-classic.team-classic-lg
+                  a.team-classic-figure(href='#')
+                    img(src='images/quote-jean.png', alt='')
+
+
+    // Aporpos 3roses
+    section.section.section-sm.section-fluid.bg-default
+      .container-fluid
+        .row.row-sm.row-30.justify-content-center
+         .col-md-12.col-lg-12.col-xl-12.wow.fadeInRight 
+           article.box-icon-modern.box-icon-modern-w70.bg-box-w70-1    
+            h3.wow.fadeInRight
+              a(name='Residentiel')
+              | Un leader du secteur du ménage
+              .box-icon-modern-decor
+            p.wow.fadeInRight(data-wow-delay='.1s')
+              | Roses Ménage a su devenir au fil des années une référence de l’entretien ménager résidentiel & commercial au Québec, nous offrons à nos clients un service de ménage à domicile et au bureaux qui répond à de très hauts standards de qualité. Nous offrons plus qu’un service d’entretien ménager, notre mission est d’offrir une expérience de propreté unique où nous transformons votre résidence en un vrai havre de paix.
+              br 
+              br
+              | Nous sommes une compagnie de ménage résidentiel & commercial qui a su se différencier de ses concurrents grâce à nos très hauts standards de qualité. En effet nous sommes arrivé à réinventer l’entretien ménager, vous n’avez plus besoin d’avoir des revenus très élevés pour pouvoir vous offrir un service de ménage à domicile de qualité.
+    
+    // ce que nous faisons
+    section.section.section-sm.section-first.bg-default.text-center
+      .container
+        .row.row-30.justify-content-center
+          .col-sm-12.wow.fadeInRight
+            .row.row-30
+
+              // boite -image
+              .col-sm-6.wow.fadeInRight(data-wow-delay='.1s')
+                article.box-icon-modern.box-icon-modern-w40
+                  img(src='images/apropos/apropos-0-513x561.png')
+                  
+              
+              // boite -Text
+              .col-sm-6.wow.fadeInRight(data-wow-delay='.1s')
+                article.box-icon-modern.box-icon-modern-w60
+                  h4.box-icon-modern-title.box-icon-modern-custom
+                    a(href='#') 
+                      | Ce que nous faisons
+                  .box-icon-modern-decor
+                  ul 
+                  li Entretien ménager résidentiel: nettoyage des électroménagers, de l’évier, du comptoir de la cuisine, des taches sur les armoires, de la salle de bain, passage de l’aspirateur et époussetage.
+                  br
+                  li Entretien ménager commercial: nettoyage de bureau, de surfaces, de vitres, de murs, de plafond et nettoyage par aspirateur.
+                  br
+                  li Lavage de vitre manuel.
+                  br
+                  li Lavage de tapis.
+                  br
+                  li Cirage de plancher.
+                  .box-icon-modern-custom
+                    a.button.button-primary.button-ujarak(href='/tarifs', data-caption-animate='fadeInUp', data-caption-delay='200') DEMANDE DEVIS
+
+    // nos avantages
+    section.section.section-sm.section-first.bg-default.text-center
+      .container
+        .row.row-30.justify-content-center
+            .col-md-7.col-xl-6
+                .row.row-30 
+                    // - Boit 1
+                    .col-sm-6.wow.fadeInRight(data-wow-delay='.1s')
+                        article.box-icon-modern.box-icon-modern-2
+                            div
+                            h5.box-icon-modern-title
+                                a(href="#") Équipe Fiable et Expérimentée
+                            .box-icon-modern-decor 
+                            p.box-icon-modern-text
+                                | Nous donnons une formation technique et pratique à nos équipes. Elles se présenteront à vous à l’heure et avec tous les équipements nécessaires.
+                    // - Boit 2
+                    .col-sm-6.wow.fadeInRight(data-wow-delay='.2s')
+                        article.box-icon-modern.box-icon-modern-2
+                            div
+                            h5.box-icon-modern-title
+                                a(href="#") Entièrement Assuré
+                            .box-icon-modern-decor 
+                            p.box-icon-modern-text
+                                | En cas de réclamation dans les 24 heures qui suivent la dernière visite, l’équipe Roses Ménage s’engage à corriger le problème sans frais.
+                    // - Boit 3
+                    .col-sm-6.wow.fadeInRight(data-wow-delay='.3s')
+                        article.box-icon-modern.box-icon-modern-2
+                            div
+                            h5.box-icon-modern-title
+                                a(href="#") Sans Contrat
+                            .box-icon-modern-decor 
+                            p.box-icon-modern-text
+                                | Le client peut suspendre ou annuler le service à tout moment pour quelque raison que ce soit. Pas d’engagement ni d’obligation.
+                    // - Boit 4
+                    .col-sm-6.wow.fadeInRight(data-wow-delay='.4s')
+                        article.box-icon-modern.box-icon-modern-2
+                            div
+                            h5.box-icon-modern-title
+                                a(href="#") Satisfaction Garantie
+                            .box-icon-modern-decor 
+                            p.box-icon-modern-text
+                                | Depuis 11 ans, nous avons travaillé fort pour créer de bonnes relations, durables avec des familles comme la vôtre.
+            // - image                                
+            .col-md-7.col-lg-5.col-xl-6.text-lg-left.wow.fadeInUp
+               .figure-classic.figure-classic-left
+                 img(src='images/apropos/apropos-1-513x561.jpg', alt='', width='513', height='561')
+                             
