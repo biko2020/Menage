@@ -463,6 +463,9 @@ a[href*='tel'], a[href*='mailto'] {
 .bg-box-w70-3 {
 	background: #c47142e2; 
 }
+.bg-box-w70-green {
+	background: rgb(152, 206, 82)
+}
 
 .box-icon-modern-2 {
 	padding-top: 42px;
