@@ -55,23 +55,23 @@ section.section.section-sm.section-bottom-70.section-fluid.bg-default
         h5.font-weight-normal R&eacute;sumez votre avis ou mettez en &eacute;vidence un d&eacute;tail int&eacute;ressant 
         a.close(href='#') &times;
         .content
-          form.rd-form.rd-mailform(name='formTemoignage', method='post', action='')
+          form
             .form-wrap
               input#temoignage-name.form-input(type='text', name='name', data-constraints='@Required')
               label.form-label(for='temoignage-name') Nom
             .form-wrap
-              input#temoignage-email.form-input(value='999999', type='email', name='email', data-constraints='@Email @Required')
+              input#temoignage-email.form-input(value='email@exemple.com', type='email', name='email', data-constraints='@Email @Required')
               label.form-label(for='temoignage-email') E-mail
             .form-wrap
               label.form-label(for='messageWhatsapp') &Eacute;crire votre avis
-              textarea#messageWhatsapp.form-input(name='messageWhatsapp')
+              textarea#messageWhatsapp.form-input(name='messageWhatsapp', data-constraints='@Required')
+          .satr_rating
+            button.star &star;
+            button.star &star;
+            button.star &star;
+            button.star &star;
+            button.star &star;
+            p.starCounter 0 / 5
             // star Rating
-            .satr_rating
-              button.star &star;
-              button.star &star;
-              button.star &star;
-              button.star &star;
-              button.star &star;
-              p.starCounter 0 / 5
-            script.
-            button.button.button-block.button-ujarak.button-secondary(onclick='sendToWhatsApp()') Envoyer
+            button.button.button-block.button-ujarak.button-secondary(onclick='sendToWhatsApp') Envoyer
+          
