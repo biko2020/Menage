@@ -1,9 +1,27 @@
-.responsive-tabs(data-type='accordion')
-  ul.resp-tabs-list
-    li Item 1 Title
-    li Item 2 Title
-    li Item 3 Title
-  .resp-tabs-container
-    div Item 1 Body
-    div Item 2 Body
-    div item 3 Body
+extends ../layout 
+
+block content
+  
+  //- Animation de chargement 
+  .preloader
+    .preloader-body
+      .cssload-container
+        span
+        span
+        span
+        span
+  //- page
+  .page
+    //- header
+    include ../partials/header
+    +header
+
+
+    //- Main
+    include ../services/notreBlog
+    +notreBlog            
+        
+       
+    //- footer
+    include ../partials/footer
+    +footer
